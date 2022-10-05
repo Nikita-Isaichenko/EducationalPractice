@@ -1,9 +1,6 @@
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-import random as rnd
-
-
 
 
 def task1_1_11():
