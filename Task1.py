@@ -4,6 +4,7 @@ import numpy as np
 
 
 def task1_1_11():
+    # 11 вариант
     def f(arg):
         if arg < 0:
             return math.sin(arg + 5)/(pow(arg, 2) + 13)
@@ -22,12 +23,14 @@ def task1_1_11():
 
 
 def task1_2_13():
-
+    # 13 вариант
     x = [i for i in range(-20, 20)]
     y = [i for i in range(-20, 20)]
 
     x.remove(0)
     y.remove(0)
+
+    print(x, y)
 
     xgrid, ygrid = np.meshgrid(x, y)
 
@@ -40,6 +43,7 @@ def task1_2_13():
 
 
 def task1_3_1():
+    # 1 вариант
     t = np.arange(0, 2*np.pi, 0.1)
     b = 50
 
@@ -55,7 +59,6 @@ def task1_3_1():
     plt.show()
 
 
-if __name__ == '__main__':
-    # task1_1_11()
-    # task1_2_13()
-    task1_3_1()
+task1_1_11()
+task1_2_13()
+task1_3_1()
